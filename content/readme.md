@@ -1,4 +1,4 @@
-# EltSnap Installation Instructions
+# Notebook Snap Installation Instructions
 
 > Usage of this product confirms your agreement to the following 'Indemnification', and 'Liability disclaimer':
 
