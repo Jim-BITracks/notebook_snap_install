@@ -31,3 +31,5 @@ EXEC [dbo].[Reset All Tables] 'Yes';
 ``` sql
 EXEC [dbo].[Reset All Tables];
 ```
+
+**Step 4** - Clone or Download the "eltSnap Runtime" from [GitHub](https://github.com/Jim-BITracks/eltsnap_runtime)
