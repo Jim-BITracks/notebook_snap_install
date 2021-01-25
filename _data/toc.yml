@@ -10,3 +10,7 @@
   sections:
   - title: Local System Configuration
     url: system_configuration
+  - title: Reset All eltsnap_v2 Tables
+    url: reset_all_eltsnap_v2_tables
+  - title: Reset All elt_framework Tables
+    url: reset_all_elt_framework_tables

@@ -22,15 +22,11 @@ See: [Deploying a .dacpac File](dacpac_deploy.md) for step-by-step instructions 
 
 **Step 2** - Reset tables in the **eltsnap_v2** database by running the following stored procedure (using a connection to **eltsnap_v2**):
 
-``` sql
-EXEC [dbo].[Reset All Tables] 'Yes';
-```
+Use Notebook: [Reset All eltsnap_v2 Tables](reset_all_eltsnap_v2_tables.ipynb)
 
 **Step 3** - Reset tables in the **elt_framework** database by running the following stored procedure (using a connection to **elt_framework**):
 
-``` sql
-EXEC [dbo].[Reset All Tables];
-```
+Use Notebook: [Reset All eltsnap_v2 Tables](reset_all_elt_framework_tables.ipynb)
 
 **Step 4** - Clone or Download, and Configure the **eltSnap Runtime** using out GitHub Repository: [Runtime](https://github.com/Jim-BITracks/eltsnap_runtime)
 
