@@ -33,10 +33,12 @@ Use Notebook: [Reset All eltsnap_v2 Tables](reset_all_eltsnap_v2_tables.ipynb)
 
 Use Notebook: [Reset All eltsnap_v2 Tables](reset_all_elt_framework_tables.ipynb)
 
-**Step 4** - **Clone** and Configure the **eltSnap Runtime** from GitHub Repository: [Runtime](https://github.com/Jim-BITracks/eltsnap_runtime)
+**Step 4** - **Clone** and Configure the **eltSnap Runtime** GitHub Repository: [Runtime](https://github.com/Jim-BITracks/eltsnap_runtime)
 
 **Step 5** - Test the eltSnap runtime by pasting the following command into the Terminal Window (be sure to update the **-server** parameter "localhost" below to specify your SQL Server instance name):
 
 ``` powershell
 eltsnap_runtime_v2 -server "localhost" -database "eltsnap_v2" -project "Log Clean-up"
 ```
+
+**Step 6** - **Clone** and Configure the **Notebook Snap Basic** GitHub Repository: [Runtime](https://github.com/Jim-BITracks/notebook_snap_basics)
