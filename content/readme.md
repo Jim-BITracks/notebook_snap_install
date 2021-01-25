@@ -13,7 +13,12 @@ See: [Liability disclaimer](liability_disclaimer.md) for details
 - Azure Data Studio
 - Python 3.9 (or later recommended)
 
+**Important**: Verify "PowerShell Requirements" using notebook: [Local System Configuration](system_configuration.ipynb)
+
 ## Installation Steps:
+
+> To Deploy a .**dacpac** file with Azure Data Studio you will need to install the extension: **SQL Server Dacpac** (Ctrl+Shift+X) 
+
 **Step 1** - Deploy the following two .dacpac (data-tier application) files to a SQL Server Instance:
 - eltsnap_v2
 - elt_framework
@@ -28,7 +33,7 @@ Use Notebook: [Reset All eltsnap_v2 Tables](reset_all_eltsnap_v2_tables.ipynb)
 
 Use Notebook: [Reset All eltsnap_v2 Tables](reset_all_elt_framework_tables.ipynb)
 
-**Step 4** - Clone or Download, and Configure the **eltSnap Runtime** using out GitHub Repository: [Runtime](https://github.com/Jim-BITracks/eltsnap_runtime)
+**Step 4** - **Clone** and Configure the **eltSnap Runtime** from GitHub Repository: [Runtime](https://github.com/Jim-BITracks/eltsnap_runtime)
 
 **Step 5** - Test the eltSnap runtime by pasting the following command into the Terminal Window (be sure to update the **-server** parameter "localhost" below to specify your SQL Server instance name):
 
