@@ -1,4 +1,4 @@
-# Notebook Snap Install
+# Notebook Snap Install.
 
 Official Site for book series "Hands-On Azure Data Studio"
 
