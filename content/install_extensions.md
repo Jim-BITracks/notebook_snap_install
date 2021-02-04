@@ -18,6 +18,6 @@ Instructions to install an extension with Azure Data Studio
 
 5. Choose notebookSnap.vsix
 
-![](vsix.png)
+![](VSIX.PNG)
 
 6. Repeat steps for eltSnap.vsix
