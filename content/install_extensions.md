@@ -4,11 +4,11 @@ Instructions to install an extension with Azure Data Studio
 
 1. Open Azure Data Studio:
 
-![](ads.png)
+![](ADS.PNG)
 
 2. Go to Extensions (Ctrl + Shift + X):
 
-![](extensions.png)
+![](Extensions.PNG)
 
 3. Click the ... icon and choose Install from VSIX:
 
