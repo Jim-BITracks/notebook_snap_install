@@ -4,7 +4,7 @@ Instructions to open a notebook with Azure Data Studio
 
 1. Open Azure Data Studio:
 
-![](ads.png)
+![](ADS.PNG)
 
 2. Click File, Open File...:
 
