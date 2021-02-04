@@ -4,11 +4,11 @@ Instructions to install an extension with Azure Data Studio
 
 1. Open Azure Data Studio:
 
-![](ADS.png)
+![](ads.png)
 
 2. Go to Extensions (Ctrl + Shift + X):
 
-![](Extensions.png)
+![](extensions.png)
 
 3. Click the ... icon and choose Install from VSIX:
 
@@ -18,6 +18,6 @@ Instructions to install an extension with Azure Data Studio
 
 5. Choose notebookSnap.vsix
 
-![](VSIX.png)
+![](vsix.png)
 
 6. Repeat steps for eltSnap.vsix

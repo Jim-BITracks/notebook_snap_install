@@ -21,7 +21,7 @@ See: [Liability disclaimer](liability_disclaimer.md) for details
 - Notebook Snap
 - ELT Snap
 
-See: [Installing ADS Extensions](install_extension.md) for step-by-step instructions.
+See: [Installing ADS Extensions](install_extensions.md) for step-by-step instructions.
 
 > To Deploy a .**dacpac** file with Azure Data Studio you will need to install the extension: **SQL Server Dacpac** (Ctrl+Shift+X) 
 
