@@ -12,7 +12,7 @@ Instructions to open a notebook with Azure Data Studio
 
 3. Navigate to the location where notebook_snap_install was cloned:
 
-![](file_explorer .png)
+![](file_explorer.png)
 
 4. Go to the notebook_snap_install\content folder.
 
