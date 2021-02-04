@@ -38,7 +38,7 @@ See: [How To Open Notebook in Azure Data Studio](open_notebook.md)
 
 **Step 4** - Reset tables in the **elt_framework** database by running the following stored procedure (using a connection to **elt_framework**):
 
-Use Notebook: [Reset All eltsnap_v2 Tables](reset_all_elt_framework_tables.ipynb)
+Use Notebook: [Reset All elt_framework Tables](reset_all_elt_framework_tables.ipynb)
 
 **Step 5** - **Clone** and Configure the **eltSnap Runtime** GitHub Repository: [Runtime](https://github.com/Jim-BITracks/eltsnap_runtime)
 
