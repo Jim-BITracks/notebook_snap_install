@@ -34,7 +34,8 @@ See: [Deploying a .dacpac File](dacpac_deploy.md) for step-by-step instructions 
 **Step 3** - Reset tables in the **eltsnap_v2** database by running the following stored procedure (using a connection to **eltsnap_v2**):
 
 Use Notebook: [Reset All eltsnap_v2 Tables](reset_all_eltsnap_v2_tables.ipynb)
-See: [How To Open Notebook in Azure Data Studio](open_notebook.md)
+
+ See: [How To Open Notebook in Azure Data Studio](open_notebook.md)
 
 **Step 4** - Reset tables in the **elt_framework** database by running the following stored procedure (using a connection to **elt_framework**):
 
