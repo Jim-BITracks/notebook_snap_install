@@ -24,8 +24,11 @@ See: [Cloning with Azure Data Studio](clone_instructions.md)
 **Step 2** - Open Install Instructions in ADS.
 
 From ADS click on the explorer icon
+
 ![](explorer.PNG)
+
 Navigate to the content folder and open readme.md
+
 ![](readme.PNG)
 
 **Step 3** - Install the following two ADS extensions:
