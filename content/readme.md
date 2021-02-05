@@ -25,6 +25,7 @@ See: [Cloning with Azure Data Studio](clone_instructions.md)
 
 From ADS click on the explorer icon
 ![](explorer.PNG)
+
 Navigate to the content folder and open readme.md
 ![](readme.PNG)
 
