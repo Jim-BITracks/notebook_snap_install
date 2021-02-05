@@ -23,13 +23,13 @@ See: [Cloning with Azure Data Studio](clone_instructions.md)
 
 **Step 2** - Open Install Instructions in ADS.
 
-From ADS click on the explorer icon
+From ADS, click on the notebook icon
 
-![](explorer.PNG)
+![](notebook.PNG)
 
-Navigate to the content folder and open readme.md
+Open the Installation notebook under "Notebook Snap Install"
 
-![](readme.PNG)
+![](installation.PNG)
 
 **Step 3** - Install the following two ADS extensions:
 - Notebook Snap
