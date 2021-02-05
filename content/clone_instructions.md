@@ -8,7 +8,7 @@ Instructions to install an extension with Azure Data Studio
 
 2. Open Azure Data Studio, press F1, type in Git Clone and select:
 
-![](git_clong.png)
+![](git_clone.png)
 
 3. Paste the URL from GitHub:
 
