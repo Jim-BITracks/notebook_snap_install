@@ -23,7 +23,7 @@ See: [Cloning with Azure Data Studio](clone_instructions.md)
 
 **Step 2** - Open Install Instructions in ADS.
 
-From ADS, click on the notebook icon:
+From ADS, click on the notebook icon
 
 ![](notebook.PNG)
 
