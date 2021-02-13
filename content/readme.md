@@ -6,12 +6,12 @@ Indemnification: You agree to indemnify, defend and hold harmless BI Tracks, its
 
 See: [Liability disclaimer](liability_disclaimer.md) for details
 
-## System Requirements:
+## System Requirements (all 64-bit):
 - Windows 10 or Windows Server 2016 (or later)
 - SQL Server 2019 (or later) Express, Standard, or Enterprise Edition
-- PowerShell Core 7.0 (or later)
+- PowerShell Core 7.1.2 (or later)
 - Azure Data Studio
-- Python 3.9 (or later recommended)
+- Python 3.8 (or later recommended)
 
 **Important**: Verify "PowerShell Requirements" using notebook: [Local System Configuration](system_configuration.ipynb)
 
@@ -31,9 +31,8 @@ Open the Installation notebook under "Notebook Snap Install"
 
 ![](installation.PNG)
 
-**Step 3** - Install the following two ADS extensions:
-- Notebook Snap
-- ELT Snap
+**Step 3** - Install the following extension:
+- eltsnap
 
 See: [Installing ADS Extensions](install_extensions.md) for step-by-step instructions.
 
