@@ -16,8 +16,4 @@ Instructions to install an extension with Azure Data Studio
 
 4. Navigate to the notebook_snap_install\extension folder.
 
-5. Choose notebookSnap.vsix
-
-![](VSIX.PNG)
-
-6. Repeat steps for eltSnap.vsix
+5. Install: eltsnap-1.3.3.vsix
