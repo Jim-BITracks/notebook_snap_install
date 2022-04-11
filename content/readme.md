@@ -46,21 +46,21 @@ See: [Installing ADS Extensions](install_extensions.md) for step-by-step instruc
 
 **Step 5** - **Clone** and *Configure* the **eltSnap Runtime** GitHub Repository: [eltSnap Runtime](https://github.com/Jim-BITracks/eltsnap_runtime)
 
-**Step 6** - Test the eltSnap runtime by pasting the following command into the Terminal Window (you may need to update the **-server** parameter "localhost" below to specify your SQL Server instance name):
-
-``` powershell
-eltsnap_runtime_v2 -server "localhost" -database "eltsnap_v2" -project "Database Log Clean-up"
-```
-
-**Step 7** - (Optional) Customize Runtime Log Directory
+**Step 6** - (Optional) Customize Runtime Log Directory
 
 This database entry allows you choose an alternate location to store your "Runtime Log files". This option will _unclutter_ your eltSnap Runtime folder.
 
-- Run the following statement in your **eltsnap_v2** database:
+- Run the following statement in your newly imported **eltsnap_v2** database:
 
 ~~~ SQL
 INSERT [elt].[application_config] VALUES ('log dir', 'C:\snap\runtime_log');  -- <-- place desired Log Directory here
 ~~~
+
+**Step 7** - Test the eltSnap runtime by pasting the following command into the Terminal Window (you may need to update the **-server** parameter "localhost" below to specify your SQL Server instance name):
+
+``` powershell
+eltsnap_runtime_v2 -server "localhost" -database "eltsnap_v2" -project "Database Log Clean-up"
+```
 
 **Step 8** - (Optional) Store runtime license in database
 
@@ -69,7 +69,11 @@ If you have an eltSnap Runtime License, you can place the license in the eltsnap
 - Run the following statements in your **eltsnap_v2** database:
 
 ~~~ SQL
-If you have an eltSnap Runtime License, you can place the license in the eltsnap_v2 database (instead of the standard config file). This allows you to update the eltSnap Runtime (e.g., via GitHub 'sync') without needing to then re-apply your Runtime license
+DECLARE @servername NVARCHAR(128) = 'SRV1' --<-- place server name here
+DECLARE @license NVARCHAR(64) = 'xxxx-xxxx-xxxx-xxx-xxxx-x' --<-- place license number here
+
+DELETE [elt].[application_config] WHERE [setting] = 'runtime license (' + @servername + ')';
+INSERT [elt].[application_config] VALUES ('runtime license (' + @servername + ')', @license);
 ~~~
 
-**Step 9** - (Optional) to get started using sample eltSnap projects, **Clone** and *Configure* the **Notebook Snap Basic** GitHub Repository: [Notebook Snap Basics](https://github.com/Jim-BITracks/notebook_snap_basics)
+**Step 9** - (Optional) Sample eltSnap projects are available in GitHub Repository: [Notebook Snap Basics](https://github.com/Jim-BITracks/notebook_snap_basics)
