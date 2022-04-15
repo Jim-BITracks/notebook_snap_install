@@ -17,11 +17,13 @@ See: [Liability disclaimer](liability_disclaimer.md) for details
 
 ## Installation Steps:
 
-**Step 1** - Clone from GitHub (using Azure Data Studio)
+**Step 1** - *Note: Perform this step only if you have not already **cloned** the repository "notebook_snap_install"*.
 
-See: [Cloning with Azure Data Studio](clone_instructions.md)
+Clone repository "notebook_snap_install" from GitHub (using Azure Data Studio). If you need help with repository cloning see: [Cloning with Azure Data Studio](clone_instructions.md)
 
-**Step 2** - Open Install Instructions in ADS.
+**Step 2** - *Note: You can skip this step if you are already viewing this notebook in Azure Data Studio*.
+
+Open Install Instructions in ADS.
 
 From ADS, click on the notebook icon:
 
@@ -36,44 +38,28 @@ Open the Installation notebook under "Notebook Snap Install"
 
 See: [Installing ADS Extensions](install_extensions.md) for step-by-step instructions.
 
-> To Import .**Bacpac** files with Azure Data Studio you will need to install the extension: **SQL Server Dacpac** (Ctrl+Shift+X) 
+> Note: for the next step, in order to *Import* .**Bacpac** files with Azure Data Studio, you will need to install the *extension*: **SQL Server Dacpac**
 
 **Step 4** - Import the following two .Bacpac (data-tier application) files to a SQL Server Instance:
 - eltsnap_v2
 - elt_framework
 
+To Import these 2 databases:
+
+- connect to your target server
+- right click on the Server listed in the side bar
+- choose: "Data-tier Application wizard"
+
+Note: the 2 .bacpac files can be found in the current repository under the 'database' folder.
+
 ![](import_bacpac.PNG)
 
-**Step 5** - **Clone** and *Configure* the **eltSnap Runtime** GitHub Repository: [eltSnap Runtime](https://github.com/Jim-BITracks/eltsnap_runtime)
+**Step 5** - **Clone** and *Configure* the **eltSnap Runtime** GitHub Repository: [eltSnap Runtime](https://github.com/Jim-BITracks/eltsnap_runtime), and then return to this repository to complete the steps below.
 
-**Step 6** - (Optional) Customize Runtime Log Directory
-
-This database entry allows you choose an alternate location to store your "Runtime Log files". This option will _unclutter_ your eltSnap Runtime folder.
-
-- Run the following statement in your newly imported **eltsnap_v2** database:
-
-~~~ SQL
-INSERT [elt].[application_config] VALUES ('log dir', 'C:\snap\runtime_log');  -- <-- place desired Log Directory here
-~~~
-
-**Step 7** - Test the eltSnap runtime by pasting the following command into the Terminal Window (you may need to update the **-server** parameter "localhost" below to specify your SQL Server instance name):
+**Step 6** - Test the eltSnap runtime by pasting the following command into the Terminal Window (you may need to update the **-server** parameter "localhost" below to specify your SQL Server instance name):
 
 ``` powershell
 eltsnap_runtime_v2 -server "localhost" -database "eltsnap_v2" -project "Database Log Clean-up"
 ```
 
-**Step 8** - (Optional) Store runtime license in database
-
-If you have an eltSnap Runtime License, you can place the license in the eltsnap_v2 database (instead of the standard config file). This allows you to update the eltSnap Runtime (e.g., via GitHub 'sync') without needing to then re-apply your Runtime license
-
-- Run the following statements in your **eltsnap_v2** database:
-
-~~~ SQL
-DECLARE @servername NVARCHAR(128) = 'SRV1' --<-- place server name here
-DECLARE @license NVARCHAR(64) = 'xxxx-xxxx-xxxx-xxx-xxxx-x' --<-- place license number here
-
-DELETE [elt].[application_config] WHERE [setting] = 'runtime license (' + @servername + ')';
-INSERT [elt].[application_config] VALUES ('runtime license (' + @servername + ')', @license);
-~~~
-
-**Step 9** - (Optional) Sample eltSnap projects are available in GitHub Repository: [Notebook Snap Basics](https://github.com/Jim-BITracks/notebook_snap_basics)
+**Step 7** - (Optional) Sample eltSnap projects are available in GitHub Repository: [Notebook Snap Basics](https://github.com/Jim-BITracks/notebook_snap_basics)
