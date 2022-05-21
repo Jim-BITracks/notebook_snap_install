@@ -57,6 +57,8 @@ Note: the 2 .bacpac files can be found in the current repository under the 'data
 
 **Step 6** - Test the eltSnap runtime by pasting the following command into the Terminal Window (you may need to update the **-server** parameter "localhost" below to specify your SQL Server instance name):
 
+Note: you may need to close and reopen Azure Data Studio to update your Environment Variables
+
 ``` powershell
 eltsnap_runtime_v2 -server "localhost" -database "eltsnap_v2" -project "Database Log Clean-up"
 ```
