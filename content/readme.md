@@ -11,7 +11,6 @@ See: [Liability disclaimer](liability_disclaimer.md) for details
 - SQL Server 2019 (or later) Express, Standard, or Enterprise Edition
 - PowerShell Core 7.1.2 (or later)
 - Azure Data Studio
-- Python 3.8 (or later)
 
 **Important**: Verify "PowerShell Requirements" using notebook: [Local System Configuration](system_configuration.ipynb)
 
