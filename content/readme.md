@@ -33,7 +33,7 @@ Open the Installation notebook under "Notebook Snap Install"
 ![](installation.PNG)
 
 **Step 3** - Install the following extension:
-- eltsnap
+- eltsnap (found under the 'extension' folder)
 
 See: [Installing ADS Extensions](install_extensions.md) for step-by-step instructions.
 
@@ -60,7 +60,7 @@ Note: the 2 .bacpac files can be found in the current repository under the 'data
 Note: you may need to close and reopen Azure Data Studio to update your Environment Variables
 
 ``` powershell
-eltsnap_runtime_v2 -server "localhost" -database "eltsnap_v2" -project "Database Log Clean-up"
+eltsnap_runtime_v2 -server "." -database "eltsnap_v2" -project "Database Log Clean-up"
 ```
 
 **Step 7** - (Optional) Sample eltSnap projects are available in GitHub Repository: [Notebook Snap Basics](https://github.com/Jim-BITracks/notebook_snap_basics)

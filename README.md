@@ -1,5 +1,5 @@
-# Notebook Snap Install
+# EltSnap Installation using ADS Notebooks
 
-Official Site for book series "Hands-On Azure Data Studio"
+This repository uses 'Notebooks' in Azure Data Studio to guide the user with installing 'EltSnap'.
 
-[Installation Instructions](content/readme.md) - Step by step instructions for installing "Notebook Snap"
+[Installation Instructions](content/readme.md) - Step by step instructions for installing "EltSnap"
